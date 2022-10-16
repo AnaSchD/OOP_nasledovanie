@@ -13,38 +13,6 @@ public class Birds extends Animals {
         }
     }
 
-    public static class NoFlying extends Birds {
-
-        public NoFlying(String livingEnvironment, String nameAnimal, Integer age, String typeOfMovement) {
-            super(livingEnvironment, nameAnimal, age, typeOfMovement);
-        }
-
-        @Override
-        public void moveAround() {
-            System.out.println(getNameAnimal() + " - нелетающая птица, она передвигается на " + getFlying());
-        }
-
-        public static void Walk() {
-            System.out.println("идет гулять");
-        }
-    }
-
-    public static class Flying extends Birds {
-
-        public Flying(String livingEnvironment, String nameAnimal, Integer age, String typeOfMovement) {
-            super(livingEnvironment, nameAnimal, age, typeOfMovement);
-        }
-
-        @Override
-        public void moveAround() {
-            System.out.println(getNameAnimal() + " - летающая птица, она " + getFlying());
-        }
-
-        public static void fly() {
-            System.out.println("идет летать");
-        }
-    }
-
     public NoFlying getNoFlying() {
         return noFlying;
     }

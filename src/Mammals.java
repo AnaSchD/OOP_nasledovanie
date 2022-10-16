@@ -25,35 +25,6 @@ public class Mammals extends Animals {
         System.out.println(getNameAnimal() + " двигается со скоростью " + getSpeedMovement() + " км/ч.");
     }
 
-
-    public static class Herbivores extends Mammals {
-
-        public Herbivores(String livingEnvironment, String nameAnimal, Integer age, Double speedMovement, String typeOfFood) {
-            super(livingEnvironment, nameAnimal, age, speedMovement, typeOfFood);
-        }
-
-        @Override
-        public void eat() {
-            System.out.println(getNameAnimal() + " - " + "травоядное животное, его тип еды - " + getTypeOfFood());
-        }
-    }
-
-    public static class Predators extends Mammals {
-
-        public Predators(String livingEnvironment, String nameAnimal, Integer age, Double speedMovement, String typeOfFood) {
-            super(livingEnvironment, nameAnimal, age, speedMovement, typeOfFood);
-        }
-
-        public static void hunt() {
-            System.out.println("идет охотиться");
-        }
-
-        @Override
-        public void eat() {
-            System.out.println(getNameAnimal() + " - " + "хищник, его тип еды - " + getTypeOfFood());
-        }
-    }
-
     @Override
     public String toString() {
         return super.toString() + " " + speedMovement + " " + typeOfFood;
